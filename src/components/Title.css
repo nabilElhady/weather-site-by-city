@@ -1,0 +1,41 @@
+.cont{
+    height: 250px !important;
+    position: relative;
+    background-color: #cccccc !important;
+
+
+}
+body  {
+    background-color: #cccccc;
+    background-position: center;
+background-repeat: no-repeat;
+position: relative;
+background-size: cover;
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+.maincontainer{
+    background-image: url("./third.jpg") !important;
+height: 100vh !important;
+background-size: cover   !important;
+background-repeat: no-repeat !important;
+}
+.big-container{
+  width: 90vw;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+.forecast{
+  font-size: 120px;
+
+text-align: center;
+
+}

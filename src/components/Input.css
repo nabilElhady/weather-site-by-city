@@ -1,0 +1,81 @@
+.btn:link,
+btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.btn:link:hover,
+btn:visited:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:link:hover::after,
+.btn:visited:hover::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(30px);
+  box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn-white {
+  width: 50%;
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: gray;
+  color: white;
+  padding: 15px 40px;
+  display: inline-block;
+  font-weight: 600;
+}
+.btn::after {
+  background-color: gray;
+}
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+
+    transform: translateY(50px);
+  }
+}
+.biggest {
+  padding: 20px;
+  transform: translateY(50px);
+  animation: moveInUp 3s;
+
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  width: 100% !important;
+}
+.font {
+  color: red !important;
+}
+#outlined-password-input {
+  font-size: 25px !important;
+}

@@ -1,0 +1,11 @@
+.maincontainer{
+    width: 100%;
+}
+.pic{
+    background-image: url("./components/third.jpg") !important;
+    height: 100vh !important;
+    background-size: cover   !important;
+    background-repeat: no-repeat !important;
+    width: 100vw;
+}
+
